@@ -26,6 +26,6 @@
   - name: Deploy War File
     get_url:
        url:  http://52.15.61.78:8081/nexus/service/local/artifact/maven/redirect?r=releases&g=com.geekcap.vmturbo&ahello-world-servlet-example&p=war&v=LATEST
-       dest: /usr/share/tomcat/webapps/hello-world-servlet-example.war
+       dest: /share/tomcat/webapps/hello-world-servlet-example.war
   - name: Start Tomcat
     service: name=tomcat state=started
